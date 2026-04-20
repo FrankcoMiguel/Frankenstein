@@ -44,7 +44,7 @@ const Publications = () => {
                 key={publication.id}
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
-                className="bg-slate-800/50 rounded-xl overflow-hidden border border-slate-700 hover:border-indigo-500/50 transition-all group"
+                className="bg-slate-800/50 rounded-xl overflow-hidden border border-slate-700 hover:border-green-500/50 transition-all group"
               >
                 <div className="aspect-video overflow-hidden">
                   <img
@@ -56,7 +56,7 @@ const Publications = () => {
                 <div className="p-6">
                   <div className="flex items-center gap-4 text-sm text-slate-400 mb-3">
                     <span className="flex items-center gap-1">
-                      <FaCalendar className="text-indigo-400" />
+                      <FaCalendar className="text-green-400" />
                       {new Date(publication.date).toLocaleDateString('en-US', {
                         year: 'numeric',
                         month: 'short',
@@ -64,11 +64,11 @@ const Publications = () => {
                       })}
                     </span>
                     <span className="flex items-center gap-1">
-                      <FaClock className="text-indigo-400" />
+                      <FaClock className="text-green-400" />
                       {publication.readTime}
                     </span>
                   </div>
-                  <h2 className="text-xl font-bold text-slate-100 mb-3 group-hover:text-indigo-400 transition-colors">
+                  <h2 className="text-xl font-bold text-slate-100 mb-3 group-hover:text-green-400 transition-colors">
                     {publication.title}
                   </h2>
                   <p className="text-slate-400 mb-4 line-clamp-2">
@@ -86,7 +86,7 @@ const Publications = () => {
                   </div>
                   <Link
                     to={`/publications/${publication.id}`}
-                    className="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-medium transition-colors"
+                    className="inline-flex items-center text-green-400 hover:text-green-300 font-medium transition-colors"
                   >
                     Read more →
                   </Link>

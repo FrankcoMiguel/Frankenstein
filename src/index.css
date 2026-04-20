@@ -292,3 +292,133 @@ html {
 .animate-document-float {
   animation: document-float 4s ease-in-out infinite;
 }
+
+/* ===== Frankenstein Lab Custom Animations ===== */
+
+:root {
+  --neon-green: #39ff14;
+  --dark-bg: #050505;
+}
+
+/* Glitch effect animation */
+@keyframes glitch-effect {
+  0% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 0% 58%);
+    transform: translate(0);
+  }
+  20% {
+    clip-path: polygon(0% 57%, 100% 29%, 100% 66%, 0% 100%);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    clip-path: polygon(0% 1%, 100% 0%, 100% 69%, 0% 71%);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    clip-path: polygon(0% 22%, 100% 49%, 100% 89%, 0% 9%);
+    transform: translate(0);
+  }
+  80% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+    transform: translate(2px, 2px);
+  }
+  100% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transform: translate(0);
+  }
+}
+
+/* Neon glow effect */
+@keyframes neon-glow {
+  0%, 100% {
+    text-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green), 0 0 30px var(--neon-green);
+  }
+  50% {
+    text-shadow: 0 0 20px var(--neon-green), 0 0 30px var(--neon-green), 0 0 40px var(--neon-green), 0 0 50px var(--neon-green);
+  }
+}
+
+@keyframes pulse-neon {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+  }
+  50% {
+    opacity: 0.5;
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.8);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes spark {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--tx), var(--ty)) scale(0);
+  }
+}
+
+/* Utility classes */
+.neon-text {
+  color: var(--neon-green);
+  animation: neon-glow 2s ease-in-out infinite;
+}
+
+.neon-border {
+  border: 1px solid var(--neon-green);
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.3), inset 0 0 10px rgba(57, 255, 20, 0.1);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+.circuit-bg {
+  background-image:
+    linear-gradient(0deg, transparent 24%, rgba(57, 255, 20, 0.05) 25%, rgba(57, 255, 20, 0.05) 26%, transparent 27%, transparent 74%, rgba(57, 255, 20, 0.05) 75%, rgba(57, 255, 20, 0.05) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, rgba(57, 255, 20, 0.05) 25%, rgba(57, 255, 20, 0.05) 26%, transparent 27%, transparent 74%, rgba(57, 255, 20, 0.05) 75%, rgba(57, 255, 20, 0.05) 76%, transparent 77%, transparent);
+  background-size: 50px 50px;
+}
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 30px rgba(57, 255, 20, 0.4);
+}
+
+.transition-glow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Smooth transitions */
+.transition-fast {
+  transition: all 0.2s;
+}
+
+.transition-smooth {
+  transition: all 0.3s;
+}
+
+.transition-slow {
+  transition: all 0.5s;
+}
+
+/* Focus states for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: none;
+  ring: 2px solid var(--neon-green);
+  ring-offset: 2px;
+  ring-offset-color: #050505;
+}

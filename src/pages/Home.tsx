@@ -37,8 +37,8 @@ const Home = () => {
         
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <h1 data-aos="zoom-in" className="text-5xl md:text-7xl font-bold text-slate-100 mb-6">
-            <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
-              Frank's Lab
+            <span className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-400 bg-clip-text text-transparent">
+              Frankenstein
             </span>
           </h1>
           
@@ -49,25 +49,25 @@ const Home = () => {
           
           <div data-aos="fade-up" data-aos-delay="400" className="flex flex-wrap justify-center gap-4 mb-12">
             <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 rounded-lg border border-slate-700">
-              <FaFlask className="text-indigo-400" />
+              <FaFlask className="text-green-400" />
               <span className="text-slate-300">Experiments</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 rounded-lg border border-slate-700">
-              <FaCode className="text-cyan-400" />
+              <FaCode className="text-emerald-400" />
               <span className="text-slate-300">Full Stack</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 rounded-lg border border-slate-700">
-              <FaDatabase className="text-purple-400" />
+              <FaDatabase className="text-teal-400" />
               <span className="text-slate-300">Data</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 rounded-lg border border-slate-700">
-              <FaCloud className="text-green-400" />
+              <FaCloud className="text-cyan-400" />
               <span className="text-slate-300">Cloud</span>
             </div>
           </div>
           
           <p data-aos="fade-up" data-aos-delay="600" className="text-slate-500 text-sm">
-            Engineered by <span className="text-indigo-400 font-semibold">Frank Orozco</span> • Senior Software Engineer
+            Engineered by <span className="text-green-400 font-semibold">Frank Orozco</span> • Senior Software Engineer
           </p>
         </div>
       </section>
@@ -107,7 +107,7 @@ const Home = () => {
             </div>
             <Link
               to="/experiments"
-              className="hidden md:inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 font-medium transition-colors"
+              className="hidden md:inline-flex items-center gap-2 text-green-400 hover:text-green-300 font-medium transition-colors"
             >
               View all experiments →
             </Link>
@@ -115,7 +115,7 @@ const Home = () => {
           
           <div
             data-aos="fade-up"
-            className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 rounded-2xl overflow-hidden border border-slate-700 hover:border-indigo-500/50 transition-all group relative"
+            className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 rounded-2xl overflow-hidden border border-slate-700 hover:border-green-500/50 transition-all group relative"
           >
             {/* Status Badge */}
             <div className="absolute top-6 right-6 z-10">
@@ -140,7 +140,7 @@ const Home = () => {
                     <h3 className="text-2xl md:text-3xl font-bold text-slate-100">
                       BackPack Pro
                     </h3>
-                    <p className="text-indigo-400 font-medium">Mobile App Remake</p>
+                    <p className="text-green-400 font-medium">Mobile App Remake</p>
                   </div>
                 </div>
                 
@@ -153,16 +153,16 @@ const Home = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-3 py-1 text-sm bg-indigo-500/20 text-indigo-400 rounded-full border border-indigo-500/30">
+                  <span className="px-3 py-1 text-sm bg-green-500/20 text-green-400 rounded-full border border-green-500/30">
                     React Native
                   </span>
-                  <span className="px-3 py-1 text-sm bg-indigo-500/20 text-indigo-400 rounded-full border border-indigo-500/30">
+                  <span className="px-3 py-1 text-sm bg-green-500/20 text-green-400 rounded-full border border-green-500/30">
                     Expo
                   </span>
-                  <span className="px-3 py-1 text-sm bg-indigo-500/20 text-indigo-400 rounded-full border border-indigo-500/30">
+                  <span className="px-3 py-1 text-sm bg-green-500/20 text-green-400 rounded-full border border-green-500/30">
                     TypeScript
                   </span>
-                  <span className="px-3 py-1 text-sm bg-indigo-500/20 text-indigo-400 rounded-full border border-indigo-500/30">
+                  <span className="px-3 py-1 text-sm bg-green-500/20 text-green-400 rounded-full border border-green-500/30">
                     Cross-Platform
                   </span>
                 </div>
@@ -170,7 +170,7 @@ const Home = () => {
                 <div className="flex flex-wrap gap-4">
                   <Link
                     to="/experiments/backpack-pro"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-lg transition-colors"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition-colors"
                   >
                     <FaRocket />
                     View Experiment
@@ -178,14 +178,14 @@ const Home = () => {
                 </div>
               </div>
               
-              <div className="aspect-video lg:aspect-auto lg:h-full overflow-hidden order-1 lg:order-2 bg-gradient-to-br from-indigo-900/50 to-purple-900/50 flex items-center justify-center p-12">
+              <div className="aspect-video lg:aspect-auto lg:h-full overflow-hidden order-1 lg:order-2 bg-gradient-to-br from-green-900/50 to-teal-900/50 flex items-center justify-center p-12">
                 <div className="relative">
                   {/* Phone mockup */}
                   <div className="w-48 md:w-64 h-96 md:h-[480px] bg-slate-900 rounded-[3rem] border-4 border-slate-700 shadow-2xl overflow-hidden relative">
                     {/* Dynamic Island */}
                     <div className="absolute top-3 left-1/2 -translate-x-1/2 w-16 h-4 bg-black rounded-full z-10"></div>
                     {/* Screen content */}
-                    <div className="w-full h-full bg-gradient-to-b from-indigo-600 to-purple-700 p-4 pt-8">
+                    <div className="w-full h-full bg-gradient-to-b from-green-600 to-teal-700 p-4 pt-8">
                       <div className="text-center text-white mb-6">
                         <p className="text-xs opacity-70">Welcome back</p>
                         <p className="font-bold">Student</p>

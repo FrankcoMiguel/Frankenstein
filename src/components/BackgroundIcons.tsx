@@ -5,12 +5,12 @@ import { BiAtom } from 'react-icons/bi';
 export const BoilingFlask = ({ className }: { className?: string }) => (
   <div className={`absolute pointer-events-none ${className}`}>
     <div className="relative">
-      <FaFlask className="text-indigo-500/20 animate-flask-wobble" />
+      <FaFlask className="text-green-500/20 animate-flask-wobble" />
       {/* Bubbles */}
       <div className="absolute bottom-1/4 left-1/2 -translate-x-1/2">
-        <span className="absolute w-1.5 h-1.5 bg-indigo-400/40 rounded-full animate-bubble-1"></span>
-        <span className="absolute w-1 h-1 bg-indigo-400/30 rounded-full animate-bubble-2 left-1"></span>
-        <span className="absolute w-2 h-2 bg-indigo-400/20 rounded-full animate-bubble-3 -left-1"></span>
+        <span className="absolute w-1.5 h-1.5 bg-green-400/40 rounded-full animate-bubble-1"></span>
+        <span className="absolute w-1 h-1 bg-green-400/30 rounded-full animate-bubble-2 left-1"></span>
+        <span className="absolute w-2 h-2 bg-green-400/20 rounded-full animate-bubble-3 -left-1"></span>
       </div>
     </div>
   </div>
@@ -19,14 +19,14 @@ export const BoilingFlask = ({ className }: { className?: string }) => (
 // Spinning Atom
 export const SpinningAtom = ({ className }: { className?: string }) => (
   <div className={`absolute pointer-events-none ${className}`}>
-    <BiAtom className="text-indigo-500/20 animate-spin-slow" />
+    <BiAtom className="text-green-500/20 animate-spin-slow" />
   </div>
 );
 
 // Orbiting Code brackets
 export const FloatingCode = ({ className }: { className?: string }) => (
   <div className={`absolute pointer-events-none ${className}`}>
-    <FaCode className="text-indigo-500/20 animate-code-float" />
+    <FaCode className="text-green-500/20 animate-code-float" />
   </div>
 );
 
@@ -36,9 +36,9 @@ export const PulsingDatabase = ({ className }: { className?: string }) => (
     <div className="relative">
       <FaDatabase className="text-indigo-500/20 animate-db-pulse" />
       {/* Data particles */}
-      <span className="absolute top-0 left-1/2 w-0.5 h-0.5 bg-cyan-400/50 rounded-full animate-data-flow-1"></span>
-      <span className="absolute top-0 left-1/3 w-0.5 h-0.5 bg-cyan-400/40 rounded-full animate-data-flow-2"></span>
-      <span className="absolute top-0 right-1/3 w-0.5 h-0.5 bg-cyan-400/30 rounded-full animate-data-flow-3"></span>
+      <span className="absolute top-0 left-1/2 w-0.5 h-0.5 bg-teal-400/50 rounded-full animate-data-flow-1"></span>
+      <span className="absolute top-0 left-1/3 w-0.5 h-0.5 bg-teal-400/40 rounded-full animate-data-flow-2"></span>
+      <span className="absolute top-0 right-1/3 w-0.5 h-0.5 bg-teal-400/30 rounded-full animate-data-flow-3"></span>
     </div>
   </div>
 );
@@ -46,7 +46,7 @@ export const PulsingDatabase = ({ className }: { className?: string }) => (
 // Floating Cloud with drift
 export const DriftingCloud = ({ className }: { className?: string }) => (
   <div className={`absolute pointer-events-none ${className}`}>
-    <FaCloud className="text-indigo-500/20 animate-cloud-drift" />
+    <FaCloud className="text-green-500/20 animate-cloud-drift" />
   </div>
 );
 
@@ -54,7 +54,7 @@ export const DriftingCloud = ({ className }: { className?: string }) => (
 export const BlinkingTerminal = ({ className }: { className?: string }) => (
   <div className={`absolute pointer-events-none ${className}`}>
     <div className="relative">
-      <FaTerminal className="text-indigo-500/20 animate-terminal-glow" />
+      <FaTerminal className="text-green-500/20 animate-terminal-glow" />
       {/* Cursor blink */}
       <span className="absolute bottom-1/4 right-1/4 w-0.5 h-2 bg-green-400/50 animate-cursor-blink"></span>
     </div>
@@ -64,7 +64,7 @@ export const BlinkingTerminal = ({ className }: { className?: string }) => (
 // Spinning Cogs/Gears
 export const SpinningCogs = ({ className }: { className?: string }) => (
   <div className={`absolute pointer-events-none ${className}`}>
-    <FaCogs className="text-indigo-500/20 animate-spin-slow" style={{ animationDuration: '12s' }} />
+    <FaCogs className="text-green-500/20 animate-spin-slow" style={{ animationDuration: '12s' }} />
   </div>
 );
 
@@ -84,7 +84,7 @@ export const PulsingLightbulb = ({ className }: { className?: string }) => (
 // Floating Book (for publications)
 export const FloatingBook = ({ className }: { className?: string }) => (
   <div className={`absolute pointer-events-none ${className}`}>
-    <FaBook className="text-indigo-500/20 animate-book-float" />
+    <FaBook className="text-green-500/20 animate-book-float" />
   </div>
 );
 

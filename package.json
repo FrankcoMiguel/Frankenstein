@@ -1,7 +1,7 @@
 {
-  "name": "frankslab",
+  "name": "franksenstein",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,6 +13,8 @@
     "@emailjs/browser": "^4.4.1",
     "@tippyjs/react": "^4.2.6",
     "aos": "^2.3.4",
+    "framer-motion": "^12.38.0",
+    "lucide-react": "^1.8.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-icons": "^5.5.0",

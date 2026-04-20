@@ -5,6 +5,7 @@ import Experiments from './pages/Experiments';
 import ExperimentDetail from './pages/ExperimentDetail';
 import Publications from './pages/Publications';
 import PublicationDetail from './pages/PublicationDetail';
+import FrankensteinLab from './pages/FrankensteinLab';
 import NotFound from './pages/NotFound';
 
 // Scroll to top on route change
@@ -36,6 +37,7 @@ function App() {
         <Route path="/projects/:slug" element={<ProjectRedirect />} />
         <Route path="/publications" element={<Publications />} />
         <Route path="/publications/:id" element={<PublicationDetail />} />
+        <Route path="/frankenstein-lab" element={<FrankensteinLab />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

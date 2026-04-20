@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-slate-900 border-t border-slate-800 py-8 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center space-y-2">
-          <p className="text-slate-400 text-sm">®Franks Lab 2025</p>
+          <p className="text-slate-400 text-sm">Frankenstein 1.0</p>
           <div className="flex items-center space-x-2 text-slate-400 text-sm">
             <span>Made with</span>
             <FaHeart className="text-red-500" />

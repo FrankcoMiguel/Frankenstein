@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const Layout = ({ children, title }: LayoutProps) => {
   useEffect(() => {
-    document.title = `${title} | frankslab`;
+    document.title = `${title} | Frankenstein`;
   }, [title]);
 
   return (

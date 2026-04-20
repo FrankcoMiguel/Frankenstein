@@ -48,7 +48,7 @@ const ExperimentCard = ({
     <div
       ref={cardRef}
       data-aos="zoom-out"
-      className="relative group bg-slate-800/50 rounded-2xl overflow-hidden border border-slate-700 hover:border-indigo-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-indigo-500/10"
+      className="relative group bg-slate-800/50 rounded-2xl overflow-hidden border border-slate-700 hover:border-green-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-green-500/10"
     >
       {/* Main Card */}
       <div
@@ -80,7 +80,7 @@ const ExperimentCard = ({
                 key={tag.id}
                 className={`px-3 py-1 text-xs rounded-full ${
                   tag.highlighted
-                    ? 'bg-indigo-500/20 text-indigo-400 border border-indigo-500/50'
+                    ? 'bg-green-500/20 text-green-400 border border-green-500/50'
                     : 'bg-slate-700/50 text-slate-400 border border-slate-600'
                 }`}
               >
@@ -93,7 +93,7 @@ const ExperimentCard = ({
           <div className="flex justify-center space-x-3">
             {icons.map((icon) => (
               <Tippy key={icon.id} content={icon.name} placement="bottom">
-                <span className="text-slate-400 hover:text-indigo-400 transition-colors cursor-default">
+                <span className="text-slate-400 hover:text-green-400 transition-colors cursor-default">
                   <i className={icon.path}></i>
                 </span>
               </Tippy>
@@ -114,7 +114,7 @@ const ExperimentCard = ({
         <div className="flex flex-wrap items-center justify-center gap-3">
           <Link
             to={`/experiments/${title.toLowerCase().replace(/\s+/g, '-')}`}
-            className="flex items-center space-x-2 px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg transition-colors"
+            className="flex items-center space-x-2 px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors"
           >
             <FaInfoCircle />
             <span>Details</span>
